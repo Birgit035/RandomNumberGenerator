@@ -14,11 +14,15 @@ public class RandomController {
 
 
     public String randomNumberGenerator() {
+        return String.valueOf(randomMethod());
+    }
+
+    public int randomMethod(){
         Random rand = new Random(); //instance of random class
         int upperbound = 101;
         //generate random values from 0-24
         int int_random = rand.nextInt(upperbound);
-        return String.valueOf(int_random);
+        return int_random;
     }
 
 
